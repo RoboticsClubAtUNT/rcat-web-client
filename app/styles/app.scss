@@ -166,3 +166,23 @@ body {
   max-width: 100%;
   word-wrap: break-word;
 }
+
+#constitution-iframe {
+  // struct
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 15px auto;
+  width: 100%;
+  max-width: 700px;
+  padding: 15px;
+  box-sizing: border-box;
+  overflow: auto;
+
+  // style
+  border:none;
+  border-radius: 3px;
+  background: white;
+}
