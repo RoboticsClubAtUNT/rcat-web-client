@@ -1,5 +1,20 @@
 
 {{#link-to 'index' id="app-bar-logo"}}{{/link-to}}
-<div id="app-bar-nav">
-  {{yield}}
-</div>
+
+
+{{#if windowIsSmall}}
+  <div id="app-bar-menu-toggle" >
+    <button type="button" {{action "toggleMenu"}}>
+      <i class="fa fa-bars" id="app-bar-menu-icon"></i>
+    </button>
+  </div>
+  {{#if menuIsVisible}}
+    <div id="app-bar-menu-list" {{action "toggleMenu"}}>
+      {{yield}}
+    </div>
+  {{/if}}
+{{else}}
+  <div id="app-bar-nav">
+    {{yield}}
+  </div>
+{{/if}}

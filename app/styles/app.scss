@@ -9,12 +9,80 @@ body {
 
 #app-bar {
   // struct
-  position: relative;
+  position: fixed;
+  top: 0;
   height: 60px;
   width: 100%;
   // style
   background: #434343;
   color: white;
+
+  #app-bar-menu-toggle {
+    // struct
+    position: absolute;
+    right: 0;
+    width: 60px;
+    top: 0;
+    bottom: 0;
+    // style
+    button {
+      // struct
+      width: 100%;
+      height: 100%;
+      padding: 0;
+      margin: 0;
+      // style
+      border: none;
+      background: #636363;
+    }
+
+    #app-bar-menu-icon {
+        font-size: 24px;
+        color: white;
+    }
+  }
+
+  #app-bar-menu-list {
+    // struct
+    position: fixed;
+    top: 60px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.75);
+    overflow: auto;
+    // style
+
+    a {
+      // struct
+      display: block;
+      text-align: center;
+      padding: 20px;
+      // style
+      font-family: sans-serif;
+      color:  #efefef;
+      text-decoration: none;
+
+      &:first-child {
+        // struct
+        margin-top: 10px;
+        // style
+      }
+
+      &.active {
+        // style
+        color: #7DC5BE;
+
+        &:hover {
+          color: #7DC5BE;
+        }
+      }
+      &:hover {
+        color:  #ffffff;
+      }
+    }
+
+  }
 
   #app-bar-logo {
     // struct
