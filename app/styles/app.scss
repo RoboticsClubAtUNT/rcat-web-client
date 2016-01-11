@@ -1,13 +1,18 @@
+$untGreen: #008E3D;
+$untGreen3: #81BE3B;
+
 body {
   // struct
   margin: 0;
   padding: 0;
+  font-size: 14px;
   // style
   font-family: sans-serif;
   background: #efefef;
 }
 
 #app-bar {
+  z-index: 900;
   // struct
   position: fixed;
   top: 0;
@@ -49,7 +54,7 @@ body {
     bottom: 0;
     right: 0;
     left: 0;
-    background: rgba(0, 0, 0, 0.75);
+    background: rgba(40, 40, 40, 0.95);
     overflow: auto;
     // style
 
@@ -71,10 +76,10 @@ body {
 
       &.active {
         // style
-        color: #7DC5BE;
+        color: $untGreen3;
 
         &:hover {
-          color: #7DC5BE;
+          color: $untGreen3;
         }
       }
       &:hover {
@@ -122,10 +127,10 @@ body {
 
       &.active {
         // style
-        color: #7DC5BE;
+        color: $untGreen3;
 
         &:hover {
-          color: #7DC5BE;
+          color: $untGreen3;
         }
       }
       &:hover {
@@ -133,4 +138,31 @@ body {
       }
     }
   }
+}
+
+#main-view {
+  // struct
+  position: absolute;
+  top: 60px;
+  left: 0;
+  right: 0;
+  // style
+}
+
+.markdown-viewer-wrapper {
+  // struct
+  padding: 15px;
+  box-sizing: border-box;
+  max-width: 100%;
+  // style
+}
+
+.markdown-viewer-body {
+  // struct
+  box-sizing: border-box;
+  padding: 15px;
+  // style
+  background: white;
+  max-width: 100%;
+  word-wrap: break-word;
 }

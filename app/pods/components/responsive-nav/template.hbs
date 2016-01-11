@@ -8,7 +8,7 @@
       <i class="fa fa-bars" id="app-bar-menu-icon"></i>
     </button>
   </div>
-  {{#if menuIsVisible}}
+  {{#if menuIsVisible class="menuIsVisible"}}
     <div id="app-bar-menu-list" {{action "toggleMenu"}}>
       {{yield}}
     </div>
