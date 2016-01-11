@@ -3,6 +3,7 @@
 module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'rcat-client',
+    podModulePrefix: 'rcat-client/pods',
     environment: environment,
     baseURL: '/',
     locationType: 'auto',

@@ -1,0 +1,68 @@
+body {
+  // struct
+  margin: 0;
+  padding: 0;
+  // style
+  font-family: sans-serif;
+  background: #efefef;
+}
+
+#app-bar {
+  // struct
+  position: relative;
+  height: 60px;
+  width: 100%;
+  // style
+  background: #434343;
+  color: white;
+
+  #app-bar-logo {
+    // struct
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 200px;
+    // style
+    background-image: url("../imgs/RCAT_Logo1_200x60.png");
+  }
+
+  #app-bar-nav {
+    // struct
+    position: absolute;
+    left: 200px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    // style
+    a {
+      // struct
+      float: left;
+      height: 100%;
+      padding: 20px 10px;
+      box-sizing: border-box;
+      // style
+      font-family: sans-serif;
+      color:  #efefef;
+      text-decoration: none;
+
+      &:first-child {
+        // struct
+        margin-left: 10px;
+        // style
+      }
+
+      &.active {
+        // style
+        color: #7DC5BE;
+
+        &:hover {
+          color: #7DC5BE;
+        }
+      }
+      &:hover {
+        color:  #ffffff;
+      }
+    }
+  }
+}

@@ -1,3 +1,18 @@
-<h2 id="title">Welcome to Ember</h2>
 
-{{outlet}}
+{{#responsive-nav id="app-bar"}}
+  {{!-- insert your links here --}}
+  {{#link-to "index"}}Home{{/link-to}}
+  {{#link-to "about"}}About{{/link-to}}
+  {{#link-to "constitution"}}Constitution{{/link-to}}
+  {{#link-to "guides"}}Guides{{/link-to}}
+  {{#link-to "blog"}}Blog{{/link-to}}
+{{/responsive-nav}}
+
+
+<div id="main-view">
+  {{outlet}}
+</div>
+
+<div id="footer">
+  
+</div>
