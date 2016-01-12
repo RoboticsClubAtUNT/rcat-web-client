@@ -10,6 +10,7 @@ Router.map(function() {
   this.route('constitution');
   this.route('guides');
   this.route('blog');
+  this.route('guide', {'path': '/guides/:id'});
 });
 
 export default Router;

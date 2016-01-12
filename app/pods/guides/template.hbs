@@ -1,1 +1,15 @@
-{{outlet}}
+
+<div id="guides-list">
+  <h1>Guides</h1>
+  {{#each model as |post|}}
+    <div id="guides-list-item">
+      {{#link-to 'guide' post}}
+        <i class="fa fa-book"></i>
+        {{post.title}}
+        <div class="">
+          
+        </div>
+      {{/link-to}}
+    </div>
+  {{/each}}
+</div>

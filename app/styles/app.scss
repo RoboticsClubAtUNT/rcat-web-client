@@ -9,6 +9,7 @@ body {
   // style
   font-family: sans-serif;
   background: #efefef;
+  font-family: 'Roboto', sans-serif;
 }
 
 #app-bar {
@@ -63,10 +64,11 @@ body {
       display: block;
       text-align: center;
       padding: 20px;
+      font-size: 16px;
       // style
-      font-family: sans-serif;
       color:  #efefef;
       text-decoration: none;
+      font-family: "Roboto Condensed", sans-serif;
 
       &:first-child {
         // struct
@@ -114,10 +116,11 @@ body {
       height: 100%;
       padding: 20px 10px;
       box-sizing: border-box;
+      font-size: 16px;
       // style
-      font-family: sans-serif;
       color:  #efefef;
       text-decoration: none;
+      font-family: "Roboto Condensed", sans-serif;
 
       &:first-child {
         // struct
@@ -185,4 +188,37 @@ body {
   border:none;
   border-radius: 3px;
   background: white;
+}
+
+
+#guides-list {
+  // struct
+  width: 100%;
+  max-width: 700px;
+  padding: 15px 15px 30px;
+  box-sizing: border-box;
+  background: white;
+  margin: 0 auto 15px;
+  // style
+  &-item {
+    // struct
+    font-size: 18px;
+    // style
+    text-transform: capitalize;
+    font-family: "Roboto Condensed", sans-serif;
+    i {
+      color: green;
+      margin-right: 10px;
+    }
+     a {
+       color: $untGreen;
+       text-decoration: none;
+     }
+  }
+}
+
+.post-wrapper {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
 }
