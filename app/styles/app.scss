@@ -172,7 +172,6 @@ body {
 }
 
 #constitution-iframe-wrapper {
-  padding: 0 10px;
   box-sizing: border-box;
   max-width: 700px;
   width: 100%;
@@ -183,7 +182,7 @@ body {
   // struct
 
   width: 100%;
-  padding: 0 15px 15px;
+  padding: 15px;
   box-sizing: border-box;
   overflow: auto;
 
@@ -300,10 +299,11 @@ body {
   font-weight: normal;
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
-
 }
 
-@media only screen and (max-device-width: 650px) {
+
+// MOBILE CSS
+@media all and (max-device-width: 650px) {
   .hero-post-wrapper {
     z-index: 800;
     width: 100%;
@@ -324,5 +324,10 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+  }
+
+  .hero-splash-title {
+    padding-top: 30px;
+    font-size: 30px;
   }
 }
