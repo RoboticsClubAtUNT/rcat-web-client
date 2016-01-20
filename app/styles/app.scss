@@ -302,6 +302,8 @@ body {
 }
 
 
+
+
 // MOBILE CSS
 @media all and (max-device-width: 650px) {
   .hero-post-wrapper {
@@ -330,4 +332,9 @@ body {
     padding-top: 30px;
     font-size: 30px;
   }
+}
+
+
+.guides-background {
+  background: url("../imgs/motherboard.jpg");
 }
