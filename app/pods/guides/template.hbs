@@ -5,14 +5,10 @@
     </div>
   </div>
   <div class="hero-post-wrapper">
+
     <div id="guides-list" class="post-content">
       {{#each model as |post|}}
-        <div id="guides-list-item">
-          {{#link-to 'guide' post}}
-            <i class="fa fa-book"></i>
-            {{post.title}}
-          {{/link-to}}
-        </div>
+        {{guide-listing data=post}}
       {{/each}}
     </div>
   </div>

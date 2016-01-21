@@ -1,5 +1,6 @@
 $untGreen: #008E3D;
 $untGreen3: #81BE3B;
+$roboBlack: #434343;
 
 body {
   // struct
@@ -301,8 +302,44 @@ body {
   text-transform: uppercase;
 }
 
+.post-section {
+  border-bottom: #c4c4c4 1px dashed;
+  padding: 15px 0;
 
+  &:last-child {
+    border-bottom: none;
+  }
+}
 
+.guide-listing-title {
+  // struct
+  font-size: 20px;
+  // style
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.guide-listing-est-read-time {
+  font-size: 14px;
+}
+
+.guide-listing-logo {
+  float: left;
+  font-size: 25px;
+  padding-right: 10px;
+}
+
+.guide-listing-info {
+  width: 100%;
+  min-height: 25px;
+}
+
+.guide-listing {
+  padding: 15px 0;
+  border-bottom: #c4c4c4 thin dashed;
+  display: block;
+  color: $roboBlack;
+  text-decoration: none;
+}
 
 // MOBILE CSS
 @media all and (max-device-width: 650px) {
@@ -337,4 +374,7 @@ body {
 
 .guides-background {
   background: url("../imgs/motherboard.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
