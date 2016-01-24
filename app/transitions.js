@@ -1,7 +1,8 @@
 export default function() {
   this.transition(
-    this.hasClass('menuIsVisible'),
-    this.toValue(true),
-    this.use('fade',  { duration: 500 })
+    this.fromRoute('index'),
+    this.toRoute('guides'),
+    this.use('fade', { duration: 200 }),
+    this.reverse('fade', { duration: 200 })
   );
 }

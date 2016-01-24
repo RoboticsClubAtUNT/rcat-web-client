@@ -7,7 +7,7 @@ export default Ember.Component.extend({
       this.toggleProperty("menuIsVisible");
     }
   },
-  didInsertElement() {
+  didRender() {
     var windowWidth = this.$(window).width();
     // switch to menu mode
     if (windowWidth <= 650) {

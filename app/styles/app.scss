@@ -153,7 +153,25 @@ body {
   top: 60px;
   left: 0;
   right: 0;
+  bottom: 0;
   // style
+}
+
+.max-width-height {
+  width: 100%;
+  height: 100%;
+}
+
+.app-bar-float-container {
+  // struct
+  float: right;
+  // style
+
+  &:last-child {
+    // struct
+    padding-right: 15px;
+    // style
+  }
 }
 
 .markdown-viewer-wrapper {
@@ -262,7 +280,7 @@ body {
   width: 100%;
   position: relative;
   // style
-  background: url("http://www.dentonrc.com/incoming/20140530-unt-administration.jpg.ece/BINARY/original/UNT+administration.jpg");
+  background: url("../imgs/unt_mall.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -359,7 +377,7 @@ body {
     width: 100%;
     position: relative;
     // style
-    background: url("http://www.dentonrc.com/incoming/20140530-unt-administration.jpg.ece/BINARY/original/UNT+administration.jpg");
+    background: url("../imgs/unt_mall.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -377,4 +395,73 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+
+.hero-post-component {
+  // struct
+  width: 100%;
+  height: 350px;
+  // style
+  background: url("http://nelsonengrco.com/wp-content/uploads/2014/03/MEMS-Banner-2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &-overlay {
+    // struct
+    height: 100%;
+    width: 100%;
+    // style
+    background: RGBA(13, 142, 46, 0.65);
+  }
+
+  &-title {
+    // struct
+    width: 100%;
+    max-width: 700px;
+    padding: 100px 30px 0;
+    box-sizing: border-box;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 40px;
+    letter-spacing: 2px;
+    // style
+    color: white;
+    font-weight: normal;
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+  }
+
+  &-paper {
+    // struct
+    z-index: 800;
+    width: 100%;
+    max-width: 700px;
+    margin: -100px auto 0;
+    padding: 0 10px;
+    box-sizing: border-box;
+    // style
+  }
+
+  &-content {
+    // struct
+    margin: 0 auto;
+    width: 100%;
+    min-height: 400px;
+    padding: 15px 15px 30px;
+    box-sizing: border-box;
+    background: white;
+    font-size: 16px;
+
+    // style
+    -webkit-box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.25);
+    box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.25);
+    color: #434343;
+
+    h1, h2, h3, h4, h5, h6 {
+      font-family: "Roboto Condensed", sans-serif;
+    }
+  }
 }
