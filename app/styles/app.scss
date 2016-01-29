@@ -522,7 +522,58 @@ body {
 
   }
 
-  &-title-alt {
+  &-title-wrapper {
+    // struct
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 50%;
+    height: 50%;
+    // style
+    // border: white thin solid;
+  }
+}
+
+
+
+
+
+
+
+
+
+.index-fullscreen {
+  // struct
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  // style
+  background: url("../imgs/motherboard.jpg");
+  &-overlay {
+    // struct
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    // style
+    // background: RGBA(13, 142, 46, 0.90);
+    background: RGBA(0, 0, 0, 0.45);
+  }
+  &-img-wrapper {
+    // struct
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 50%;
+    height: 50%;
+    // style
+  }
+  &-img {
     // struct
     position: absolute;
     right: -100px;
@@ -547,18 +598,13 @@ body {
       opacity: 0.70;
     }
   }
-
-  &-title-wrapper {
-    // struct
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    width: 50%;
-    height: 50%;
-    // style
-    // border: white thin solid;
-  }
 }
+
+
+
+
+
+
 
 
 @media all and (max-device-width: 650px) {

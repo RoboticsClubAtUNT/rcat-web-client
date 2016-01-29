@@ -14,6 +14,16 @@ export default Ember.Component.extend({
     }
   },
 
+  didInsertElement() {
+    var windowWidth = this.$(window).width();
+    // switch to menu mode
+    if (windowWidth <= 650) {
+      this.set('windowIsSmall', true);
+    } else {
+      this.set('windowIsSmall', false);
+    }
+  },
+
   didRender() {
     this.set('videoIsReady', true);
   },
