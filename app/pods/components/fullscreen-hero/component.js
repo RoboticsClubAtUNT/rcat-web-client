@@ -9,6 +9,7 @@ export default Ember.Component.extend({
       component.bindPropertyToPlayer(player, 'src');
       player.play();
       player.loop(true);
+      // player.poster("../imgs/motherboard.jpg");
       // player.fluid(true);
     }
   },
@@ -16,6 +17,7 @@ export default Ember.Component.extend({
   didRender() {
     this.set('videoIsReady', true);
   },
+
 
   willDestroyElement() {
     this.set('videoIsReady', false);

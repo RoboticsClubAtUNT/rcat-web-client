@@ -1,17 +1,33 @@
+
 <div class="fullscreen-hero">
 
-  <!--
-    The content in the following video does not belong nor was it
-    filmed by the Robotics Club At UNT. The rights to the content belongs,
-    with the original owners.
-  -->
-  {{ivy-videojs-player ready="ready" src=src class="fullscreen-hero-video"}}
 
-  <div class="fullscreen-hero-overlay">
-    <div class="fullscreen-hero-title-wrapper">
-      <div class="fullscreen-hero-title">
-        <img src="../imgs/white-logo.png" alt="" />
+
+
+  {{#if windowIsSmall}}
+    <div class="index-fullscreen">
+      <div class="index-fullscreen-overlay">
+        <div class="index-fullscreen-img-wrapper">
+          <div class="index-fullscreen-img">
+              <img src="../imgs/white-logo.png" width="200" />
+          </div>
+        </div>
       </div>
     </div>
-  </div>
+  {{else}}
+    <!--
+      The content in the following video does not belong nor was it
+      filmed by the Robotics Club At UNT. The rights to the content belongs,
+      with the original owners.
+    -->
+    {{ivy-videojs-player ready="ready" src=src class="fullscreen-hero-video"}}
+    <div class="fullscreen-hero-overlay">
+      <div class="fullscreen-hero-title-wrapper">
+        <div class="fullscreen-hero-title">
+          <img src="../imgs/white-logo.png" alt="" />
+        </div>
+      </div>
+    </div>
+  {{/if}}
+
 </div>
