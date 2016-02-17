@@ -8,15 +8,24 @@
   color: #434343;
   section {
     width: 100%;
-    min-height: 150px;
+    // min-height: 150px;
     padding: 30px;
     box-sizing: border-box;
   }
 }
 
+#indexRecruitment {
+  text-align: center;
+  font-size: 60px;
+  font-family: "Roboto Condensed", sans-serif;
+  color: white;
+  background: $untGreen;
+}
+
 #designBuildCode {
   background: white;
-  border-top: #ddd thin solid;
+  // border-top: #ddd thin solid;
+  border-bottom: #ddd thin solid;
   div {
     max-width: 1280px;
     margin: 0 auto;
