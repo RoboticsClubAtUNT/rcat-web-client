@@ -1,0 +1,93 @@
+.fullscreen-hero {
+  // struct
+  z-index: 500;
+  position: fixed;
+  top: 60px;
+  width: 100%;
+  height: 600px;
+  // style
+  // background: url("../imgs/motherboard.jpg");
+
+  &-video {
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+    // background: url('//demosthenes.info/assets/images/polina.jpg') no-repeat;
+    // background-size: cover;
+    overflow: hidden;
+
+    video {
+      position: absolute;
+      top: 50% !important;
+      left: 50% !important;
+      min-width: 100% !important;
+      min-height: 100% !important;
+      width: auto !important;
+      height: auto !important;
+      z-index: -100 !important;
+      transform: translateX(-50%) translateY(-50%) !important;
+      // background: url('//demosthenes.info/assets/images/polina.jpg') no-repeat;
+      // background-size: cover;
+      transition: 1s opacity !important;
+    }
+ }
+
+  &-overlay {
+    // struct
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    // style
+    // background: RGBA(13, 142, 46, 0.90);
+    background: RGBA(0, 0, 0, 0.45);
+  }
+
+  &-title {
+    // struct
+    position: absolute;
+    right: -200px;
+    bottom: -146px;
+    text-align: center;
+    font-size: 36px;
+    letter-spacing: 2px;
+    height: 292px;
+    width: 400px;
+    // padding: 52px 0;
+    // box-sizing: border-box;
+    // style
+    color: $roboBlack;
+    font-weight: normal;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+
+    img {
+      // -webkit-box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.25);
+      // -moz-box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.25);
+      // box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.25);
+      opacity: 0.70;
+    }
+
+  }
+
+  &-title-wrapper {
+    // struct
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 50%;
+    height: 50%;
+    // style
+    // border: white thin solid;
+  }
+}
