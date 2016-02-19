@@ -4,7 +4,6 @@
   margin-top: 600px;
   width: 100%;
   background: #f4f4f4;
-  height: 1000px;
   color: #434343;
   section {
     width: 100%;
@@ -59,5 +58,39 @@
         margin-top: 15px;
       }
     }
+  }
+}
+
+
+.info-block {
+
+  border-bottom: #ddd thin solid;
+
+  h1 {
+    font-size: 36px;
+  }
+
+  p {
+    font-size: 22px;
+  }
+
+  div {
+    max-width: 1280px;
+    div {
+      padding: 15px;
+      box-sizing: border-box;
+    }
+  }
+
+  img {
+    width: 100%;
+  }
+
+  &:nth-child(2n) {
+    background: white;
+  }
+
+  &:nth-child(2n+1) {
+    // text-align: right;
   }
 }
