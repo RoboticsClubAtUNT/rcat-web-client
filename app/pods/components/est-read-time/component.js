@@ -5,7 +5,7 @@ export default Ember.Component.extend({
   readTime: Ember.computed('content', function() {
     var content = this.get('content');
     var contentArray = content.split(" ");
-    var result = contentArray.length  / 150;
+    var result = contentArray.length  / 60;
     return parseFloat(result.toString()).toFixed(1);
   })
 });
