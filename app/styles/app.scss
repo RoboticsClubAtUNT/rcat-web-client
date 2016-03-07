@@ -226,17 +226,24 @@ ol, ul {
   }
 
   pre {
-    background: #333;
-    color: white;
+    background: #f4f4f4;
+    color: #434343;
     padding: 15px;
     box-sizing: border-box;
     border-radius: 3px;
     overflow: auto;
     line-height: 1.5;
     font-size: 14px;
+    border: #ddd thin solid;
+    overflow-x: auto;
+    word-wrap: normal;
+    white-space: pre;
+
 
     code {
       font-size: 12px;
+      font-family: "Roboto Mono", monospace;
+
     }
 
   }
