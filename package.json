@@ -41,8 +41,7 @@
     "ember-moment": "5.0.2",
     "ember-resolver": "^2.0.3",
     "ivy-videojs": "0.6.2",
-    "liquid-fire": "0.23.0",
-    "markdown-code-highlighting": "0.0.6"
+    "liquid-fire": "0.23.0"
   },
   "dependencies": {
     "fastclick": "^1.0.6"
