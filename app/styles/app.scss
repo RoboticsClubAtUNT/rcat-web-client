@@ -226,8 +226,8 @@ ol, ul {
   }
 
   pre {
-    background: #f4f4f4;
-    color: #434343;
+    background: #333333;
+    color: white;
     padding: 15px;
     box-sizing: border-box;
     border-radius: 3px;
@@ -243,9 +243,20 @@ ol, ul {
     code {
       font-size: 12px;
       font-family: "Roboto Mono", monospace;
-
+      background: none;
+      color:white;
+      padding: none;
+      border-radius: none;
     }
 
+  }
+
+  code {
+    font-family: "Roboto Mono", monospace;
+    background: #f4f4f4;
+    color: black;
+    // padding: 0 5px;
+    border-radius: 3px;
   }
 }
 
@@ -606,3 +617,5 @@ ol, ul {
 
 @import "index";
 @import "components/fullscreen-hero";
+@import "layout";
+@import "modules";

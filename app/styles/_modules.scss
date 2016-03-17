@@ -1,0 +1,41 @@
+.signup-form {
+
+  > * {
+    margin-bottom: 15px;
+  }
+
+  &-item {
+    width: 100%;
+    label {
+      display: block;
+      font-size: 14px;
+      font-family: "Roboto Condensed", sans-serif;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-left: 3px;
+    }
+    input {
+      width: 100%;
+      display: block;
+      padding: 12px;
+      font-size: 14px;
+      border: #ccc thin solid;
+      border-radius: 5px;
+      font-family: "Roboto", sans-serif;
+    }
+
+  }
+  button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    border-radius: 5px;
+    border: #ddd thin solid;
+    background: $untGreen;
+    color: white;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+}
