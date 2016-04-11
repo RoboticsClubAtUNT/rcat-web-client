@@ -7,8 +7,17 @@
   <div class="hero-post-wrapper">
 
     <div id="guides-list" class="post-content">
-      {{#each model as |post|}}
+      {{input class="guides-list-filter"
+        placeholder="Search for a guide here..."
+        value=searchQuery}}
+      {{#each filteredContent as |post|}}
         {{guide-listing data=post}}
+      {{else}}
+        <div class="no-guide-found">
+          A guide with "{{searchQuery}}" could not be found.
+          <br>
+          <i class="fa fa-frown-o" aria-hidden="true"></i>
+        </div>
       {{/each}}
     </div>
   </div>

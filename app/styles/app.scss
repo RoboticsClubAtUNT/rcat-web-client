@@ -428,10 +428,14 @@ ol, ul {
 
 .guide-listing {
   padding: 15px 0;
-  border-bottom: #c4c4c4 thin dashed;
+  border-bottom: #ddd thin solid;
   display: block;
   color: $roboBlack;
   text-decoration: none;
+
+  &:hover {
+    background: #f4f4f4;
+  }
 }
 
 // MOBILE CSS

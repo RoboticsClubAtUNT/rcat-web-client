@@ -39,3 +39,26 @@
     letter-spacing: 1px;
   }
 }
+
+.guides-list-filter {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  font-family: "Roboto", monospace;
+  border: #ddd thin solid;
+  margin-bottom: 5px;
+}
+
+.no-guide-found {
+  width: 100%;
+  padding-top: 30px;
+  font-size: 24px;
+  color: #ddd;
+  text-align: center;
+  font-family: "Roboto Condensed", sans-serif;
+
+  i {
+    margin-top: 10px;
+    font-size: 72px;
+  }
+}
