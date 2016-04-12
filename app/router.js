@@ -16,6 +16,7 @@ Router.map(function() {
   this.route('blog');
   this.route('guide', {'path': '/guides/:id'});
   this.route('signup');
+  this.route('calendar');
 });
 
 export default Router;
