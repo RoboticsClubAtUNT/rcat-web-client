@@ -14,23 +14,27 @@
     <form class="signup-form" {{action 'submitForm' on="submit"}}>
       <div class="signup-form-item">
         <label>Name</label>
-        {{input placeholder="i.e. John Snow"}}
+        {{input placeholder="i.e. John Snow" value=name}}
       </div>
       <div class="signup-form-item">
         <label>EUID</label>
-        {{input placeholder="i.e. js0123"}}
+        {{input placeholder="i.e. js0123" value=euid}}
       </div>
       <div class="signup-form-item">
         <label>Email</label>
-        {{input placeholder="i.e johnsnow@my.unt.edu"}}
+        {{input placeholder="i.e johnsnow@my.unt.edu" value=email}}
       </div>
       <button type="submit">Sign Up</button>
     </form>
 
     {{else}}
-      <h1>
-        Thanks for Submitting!
-      </h1>
+      <div class="signup-form-response">
+        <h1>
+          Thanks {{name}} for submitting! Hope to see you at our meetings!
+        </h1>
+        <i class="fa fa-smile-o" aria-hidden="true"></i>
+      </div>
+
     {{/unless}}
   </section>
 
