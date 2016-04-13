@@ -13,12 +13,19 @@
   }
 }
 
-#indexRecruitment {
+.indexRecruitment {
   text-align: center;
   font-size: 60px;
   font-family: "Roboto Condensed", sans-serif;
   color: white;
   background: $untGreen;
+  -webkit-transition: background 0.3s; /* Safari */
+  transition: background 0.3s;
+
+  &:hover {
+    background: $untGreen2;
+    cursor: pointer;
+  }
 }
 
 #designBuildCode {

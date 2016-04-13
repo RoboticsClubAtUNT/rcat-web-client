@@ -1,8 +1,8 @@
 {{fullscreen-hero}}
 <div id="homeMainContent">
-  <section id="indexRecruitment">
+  {{#link-to 'signup' class="indexRecruitment" tagName="section"}}
     Come Join the Club!
-  </section>
+  {{/link-to}}
   <section id="designBuildCode">
     <div class="frame">
       <div class="bit-3">
@@ -81,6 +81,10 @@
       </div>
     </div>
   </section>
+
+  {{#link-to 'signup' class="indexRecruitment" tagName="section"}}
+    Come Join the Club!
+  {{/link-to}}
 
   <footer id="homepageFooter">
     <div class="frame">

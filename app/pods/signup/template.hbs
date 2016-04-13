@@ -1,32 +1,51 @@
 <main id="membershipSignup">
+
+  <h1>How to Become a Robotics Club Member</h1>
+
   <section>
-    <div class="bit-2">
-      <img src="https://scontent-dfw1-1.xx.fbcdn.net/hphotos-xfa1/v/t1.0-0/s261x260/12662730_10207172058598281_1626751767386874465_n.jpg?oh=dbb6decd7abcc3549047eb975de0f402&oe=57878D14" alt="" />
-    </div>
-    <div class="bit-2">
-      <form class="signup-form">
-        <div class="signup-form-item">
-          <label>Name</label>
-          {{input placeholder="i.e. John Snow"}}
-        </div>
-        <div class="signup-form-item">
-          <label>EUID</label>
-          {{input placeholder="i.e. js0123"}}
-        </div>
-        <div class="signup-form-item">
-          <label>Email</label>
-          {{input placeholder="i.e john.snow@thenightswatch.com"}}
-        </div>
-        <button type="submit">Sign Up</button>
-      </form>
-    </div>
+    <h1>Step 1: Submit a Membership Request</h1>
+    <p>
+      Fill out this form to submit a membership request. This will also sign
+      you up to our newsletter to help you stay updated.
+    </p>
+
+    {{#unless isSubmitted}}
+
+    <form class="signup-form" {{action 'submitForm' on="submit"}}>
+      <div class="signup-form-item">
+        <label>Name</label>
+        {{input placeholder="i.e. John Snow"}}
+      </div>
+      <div class="signup-form-item">
+        <label>EUID</label>
+        {{input placeholder="i.e. js0123"}}
+      </div>
+      <div class="signup-form-item">
+        <label>Email</label>
+        {{input placeholder="i.e johnsnow@my.unt.edu"}}
+      </div>
+      <button type="submit">Sign Up</button>
+    </form>
+
+    {{else}}
+      <h1>
+        Thanks for Submitting!
+      </h1>
+    {{/unless}}
   </section>
+
   <section>
-    test
+    <h1>Step 2: Come Check Us Out on Campus!</h1>
+    <p>
+      We meet nearly every Friday at 7:30 PM. We are located in the Senior
+      Design Lab (Room F260) at Discovery Park. Check out our
+      {{#link-to 'calendar'}}calendar{{/link-to}} to find out when we exactly meet.
+    </p>
+    <img src="/imgs/roboticsclub_map.png" alt="Robotics Club Map" />
   </section>
-  <section>
-    test
-  </section>
+
+
+
 
 </main>
 <footer>
